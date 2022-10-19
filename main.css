@@ -1,0 +1,149 @@
+body
+{
+    font-family: 'Raleway', sans-serif;
+    font-weight: normal;
+    text-decoration: none;
+}
+
+.contact
+{
+  display: block;
+  text-align: left;
+  margin-left: 50px;
+  margin-top: 120px;
+  white-space: nowrap;
+}
+
+.education
+{
+  display: block;
+  text-align: left;
+  margin-left: 50px;
+  margin-top: 40px;
+  white-space: nowrap;
+} 
+    
+.skills
+{
+  display: block;
+  text-align: left;
+  margin-top: 40px;
+  margin-left: 50px;
+}
+
+.header
+{
+    font-size: 68px;
+    color: black;
+    text-decoration: none;
+    text-align: right;
+    padding-right: 20px;
+    margin-right: 100px;
+    display: block;
+    margin-top: 50px;
+    font-weight: 100;
+}
+
+
+.experience
+{
+  display: block;
+  text-align: left;
+  position: absolute;
+  top: 550px;
+  right: 75px;
+}
+
+.hobbies
+{
+  display: block;
+  text-align: left;
+  position: absolute;
+  top: 1138px;
+  right: 92px;
+}
+
+.profile
+{
+  display: block;
+  position: absolute;
+  text-align: left;
+  top: 302px;
+  right: 43px;
+}
+
+.languages
+{
+  display: block;
+  position: absolute;
+  text-align: left;
+  top: 895px;
+  right: 160px;
+}
+
+.verticalLine
+{
+   display: block;
+   height: 120%;
+   border-left: 1px solid black;
+   border-width: thin;
+   position: absolute;
+   left: 50%;
+   top: 46%;
+   margin-bottom: 0;
+  
+}
+    
+@media only screen and (max-width:1090px) 
+{
+    .contact, .education, .experience, .hobbies, .languages, .profile, .skills
+    {
+      width: 80%;
+      padding: 0;
+      position: relative;
+      display: block;
+      text-align: left;
+      margin-left: 0;
+      left: 0;
+      top: 0;
+    }
+    .verticalLine
+    {
+      display: none;
+    }
+}
+
+@media only screen and (max-width:500px) 
+{
+   .contact, .education, .experience, .hobbies, .languages, .profile, .skills
+   {
+      width: 100%;
+      position: relative;
+      display: block;
+      text-align: left;
+      margin-left: 0;
+      left: 0;
+      top: 0;
+   }
+   .verticalLine
+   {
+    display: none;
+   }
+}
+
+#contactElements
+{
+    list-style-type: none;
+    padding: 10px;
+}
+
+#skillsElements
+{
+    list-style-type: circle;
+}
+
+#hobbiesList
+{
+  list-style-type: circle;
+  text-decoration: none;
+}
