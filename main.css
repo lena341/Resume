@@ -1,34 +1,10 @@
+* {
+    box-sizing: border-box;
+}
+
 body
 {
     font-family: 'Raleway', sans-serif;
-    font-weight: normal;
-    text-decoration: none;
-}
-
-.contact
-{
-  display: block;
-  text-align: left;
-  margin-left: 50px;
-  margin-top: 120px;
-  white-space: nowrap;
-}
-
-.education
-{
-  display: block;
-  text-align: left;
-  margin-left: 50px;
-  margin-top: 40px;
-  white-space: nowrap;
-} 
-    
-.skills
-{
-  display: block;
-  text-align: left;
-  margin-top: 40px;
-  margin-left: 50px;
 }
 
 .header
@@ -44,106 +20,66 @@ body
     font-weight: 100;
 }
 
-
-.experience
+.row::after
 {
-  display: block;
-  text-align: left;
-  position: absolute;
-  top: 550px;
-  right: 130px;
+    content: "";
+    clear: both;
+    display: table;
 }
 
-.hobbies
+.col-4
 {
-  display: block;
-  text-align: left;
-  position: absolute;
-  top: 1138px;
-  right: 92px;
+   width: 33.33%; 
+   float: left;
+   padding: 36px;
 }
 
-.profile
+#verticalLine
 {
-  display: block;
-  position: absolute;
-  text-align: left;
-  top: 302px;
-  right: 43px;
+    position: relative;
+    left: 240px;
+    top: 72px;
+    height: 1015px;
+    border-left: 1px solid black;
 }
 
-.languages
+#thirdCol
 {
-  display: block;
-  position: absolute;
-  text-align: left;
-  top: 895px;
-  right: 160px;
+    position: relative; 
+    left: -100px;
 }
 
-.verticalLine
+@media only screen and (max-width:992px)
 {
-   display: block;
-   height: 120%;
-   border-left: 1px solid black;
-   border-width: thin;
-   position: absolute;
-   left: 50%;
-   top: 46%;
-   margin-bottom: 0;
-  
-}
-    
-@media only screen and (max-width:1360px) 
-{
-    .contact, .education, .experience, .hobbies, .languages, .profile, .skills
+    #verticalLine
     {
-      width: 80%;
-      padding: 0;
-      position: relative;
-      display: block;
-      text-align: left;
-      margin-left: 0;
-      left: 0;
-      top: 0;
+        display: none;
     }
-    .verticalLine
+
+    .col-4
     {
-      display: none;
+        width: 50%;
+    }
+
+    #thirdCol
+    {
+        position: relative;
+        left: 10px;
     }
 }
 
-@media only screen and (max-width:500px) 
+@media only screen and (max-width:768px) 
 {
-   .contact, .education, .experience, .hobbies, .languages, .profile, .skills
-   {
-      width: 100%;
-      position: relative;
-      display: block;
-      text-align: left;
-      margin-left: 0;
-      left: 0;
-      top: 0;
-   }
-   .verticalLine
-   {
-    display: none;
-   }
-}
+    .col-4
+    {
+        width: 100%;
+        float: left;
+        padding: 34px;
+    }
 
-#contactElements
-{
-    list-style-type: none;
-    padding: 10px;
-}
-
-#skillsElements
-{
-    list-style-type: circle;
-}
-
-#hobbiesList
-{
-  list-style-type: circle;
-  text-decoration: none;
+    #thirdCol
+    {
+        position: relative;
+        left: 0px;
+    }
 }
