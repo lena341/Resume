@@ -18,33 +18,27 @@
     <span>Eleni Kartsakli</span><br>
     <span style="font-size: 30px;">Undergraduate student</span>
   </section>
-  <div class="verticalLine">
-    <i class="fa fa-circle" id="circle1" style="margin-top: -15px; margin-left: -7px; position: absolute;"></i>
-    <i class="fa fa-circle" id="cirlce2" style="margin-top: 230px; margin-left: -7px; position: absolute;"></i>
-    <i class="fa fa-circle" id="circle3" style="margin-top: 470px; margin-left: -7px; position: absolute;"></i>
-    <i class="fa fa-circle" id="circle4" style="margin-top: 710px; margin-left: -7px; position: absolute;"></i>
-    <i class="fa fa-circle" id="circle5" style="margin-top: 970px; margin-left: -7px; position: absolute;"></i>
-  </div>
-  <section class="contact">
-    <h3>CONTACT</h3>
-    <ul id="contactElements">
-      <li><i class="fa fa-envelope"></i><a href="mailto:el-kart-@outlook.com" target="_blank" style="text-decoration: none; color: black;">&nbsp;&nbsp;el-kart-@outlook.com</a></li><br>
-      <li><i class="fa fa-linkedin"></i><a href="https://www.linkedin.com/in/eleni-k-a1a1911b7/" target="_blank" style="text-decoration: none; color:black">&nbsp;&nbsp;LinkedIn</a></li><br>
-      <li><i class="fa fa-github"></i><a href="https://github.com/Lena341" target="_blank" style="text-decoration: none; color:black">&nbsp;&nbsp;GitHub</a></li><br>
-    </ul>
-  </section>
-  <br>
-  <section class="skills">
-    <h3>SKILLS</h3>
-    <ul id="skillsElements">
-      <li>Microsoft Azure</li>
-      <li>AWS</li>
-      <li>Web Development</li>
-      <li>ASP.NET Core</li>
-    </ul>
-  </section>
-  <br>
-  <section class="education">
+    
+  <div class="row">
+    <div class = "col-4">
+      <section>
+        <h3>CONTACT</h3>
+        <ul id="contactElements">
+        <li><i class="fa fa-envelope"></i><a href="mailto:el-kart-@outlook.com" target="_blank" style="text-decoration: none; color: black;">&nbsp;&nbsp;el-kart-@outlook.com</a></li><br>
+        <li><i class="fa fa-linkedin"></i><a href="https://www.linkedin.com/in/eleni-k-a1a1911b7/" target="_blank" style="text-decoration: none; color:black">&nbsp;&nbsp;LinkedIn</a></li><br>
+        <li><i class="fa fa-github"></i><a href="https://github.com/Lena341" target="_blank" style="text-decoration: none; color:black">&nbsp;&nbsp;GitHub</a></li><br>
+        </ul>
+     </section>
+    <section style="padding-top: 20px;">>
+       <h3>SKILLS</h3>
+       <ul style="list-style-type: circle;">
+         <li>HTML5, CSS, Bootstrap 3&5</li>
+         <li>Microsoft Azure</li>
+         <li>AWS</li>
+         <li>ASP.NET Core</li>
+       </ul>
+   </section>
+   <section style="padding-top: 25px;">
     <h3>EDUCATION</h3>
     <h4><i>High School Diploma</i></h4>
     <p>1st General Lyceum<br>Ioannina, Greece<br>GPA: 15.2<br>September 2014 - June 2017</p>
@@ -62,16 +56,24 @@
       <li>Azure App Service developement and Azure Virtual Machine deployment</li>
     </ul>
   </section>
-  <br>
-  <section class="profile">
+</div>
+<div class = "col-4" id = "verticalLine">
+  <i class="fa fa-circle" id="circle1" style="margin-top: -38px; margin-left: -43px; position: absolute;"></i>
+  <i class="fa fa-circle" id="cirlce2" style="margin-top: 220px; margin-left: -43px; position: absolute;"></i>
+  <i class="fa fa-circle" id="circle3" style="margin-top: 480px; margin-left: -43px; position: absolute;"></i>
+  <i class="fa fa-circle" id="circle4" style="margin-top: 730px; margin-left: -43px; position: absolute;"></i>
+  <i class="fa fa-circle" id="circle5" style="margin-top: 970px; margin-left: -43px; position: absolute;"></i>
+</div>
+
+<div class = "col-4" id = "thirdCol">
+  <section>
     <h3>PROFILE</h3>
     <p>I am 23 years old and I study at the Department of Informatics and Telecommunications<br> of the University of Ioannina.
     I attended the curriculum of the Department of <br> Computer Engineering TE., and I chose the Software Engineering direction.<br>
     I am currently attending the curriculum of the Department of<br> Informatics and Telecommunications, 
     which includes four courses<br> towards a university degree. In my free time apart from doing my hobbies,<br> I enjoy learning about Cloud Computing platforms,<br>and doing projects on Web Development.</p>
   </section>
-  <br>
-  <section class="experience">
+  <section style="padding-top: 20px;">
     <h3>EXPERIENCE</h3>
     <h4><i>WordPress WooCommerce Developer</i> | <i>April 15th 2022 - October 14th 2022</i></h4>
     <p>Internship at the Science and Technology Park of Epirus in Ioannina Greece.<br> Responsibilities and Achievements:</p>
@@ -85,18 +87,16 @@
       <li>Learn to use Visual Studio Code for app developement</li>
     </ul>
   </section>
-  <br>
-  <section class="languages">
+  <section style="padding-top: 20px;">
     <h3>LANGUAGES</h3>
     <h4><i>Greek</i></h4> 
     <p>Native Language</p>
     <h4><i>English</i></h4> 
     <p>Certificate of Proficiency in English (C2) University of Michigan, May 2015</p>
   </section>
-  <br>
-  <section class="hobbies">
+  <section style="padding-top: 20px;">
     <h3>HOBBIES</h3>
-      <ul id="hobbiesList">
+      <ul>
         <li>Traveling: I traveled to Rome, Dubai and Paris to meet new cultures<br> and visit well-known historical and non-historical sites</li>
         <li>Football: I play football with my friends on the weekends</li>
         <li>Drawing: I drew posters for school events and still draw for personal interest</li>
@@ -105,5 +105,7 @@
         <li>Walking</li>
       </ul>
    </section>
+ </div>
+</div>
 </body>
 </html>
